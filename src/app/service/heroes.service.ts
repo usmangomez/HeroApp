@@ -19,4 +19,20 @@ export class HeroesService {
   getHero(idx: number): Hero {
     return this.heroes[idx];
   }
+
+  getSearchHeroes(name: string): Hero[] {
+
+    let heroesSeach: Hero[]=[];
+
+    for (const hero of this.heroes) {
+      
+      if(hero.nombre.toLowerCase().indexOf(name.toLowerCase()) >= 0) {
+        heroesSeach.push(hero);
+      }
+
+    }
+
+    return heroesSeach;
+
+  }
 }
