@@ -17,14 +17,11 @@ export class BuscadorComponent implements OnInit {
 
   ngOnInit(): void {
     this._activeRouter.params.subscribe( params => {
+      this.heroSearch = params['busqueda'];
       this.heroes = this._heroesService.getSearchHeroes(params['busqueda']);
     })
 
     console.log(this.heroes);
-  }
-  
-  heroP(idx: number) {
-    this._router.navigate(['/hero', idx]);
   }
 
 }

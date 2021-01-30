@@ -1,0 +1,12 @@
+<div class="card h-100">
+    <img [src]="hero.img" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">{{ hero.nombre }}</h5>
+        <p class="card-text">{{ hero.bio }}</p>
+    </div>
+    
+    <div class="d-grid gap-2 p-3">
+        <button class="btn btn-primary" type="button" (click)="heroP(hero.idx)">Ver más</button>
+    </div>
+</div>
+

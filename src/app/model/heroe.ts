@@ -1,4 +1,5 @@
 export class Hero {
+    idx?: number;
     nombre: string;
     bio: string;
     img: string;

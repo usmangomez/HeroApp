@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app.routes';
 import { HeroComponent } from './components/hero/hero.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { HeroCardComponent } from './components/hero-card/hero-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     AboutComponent,
     HomeComponent,
     HeroComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    HeroCardComponent
   ],
   imports: [
     BrowserModule,
